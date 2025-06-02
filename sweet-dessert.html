@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Desserts - Decallafe</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Decallafe</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="drinks.html">Drinks</a></li>
+            <li><a href="sweet-dessert.html" class="active">Sweet Dessert</a></li>
+            <li><a href="savory-dessert.html">Savory Dessert</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="cart-icon">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="menu-page">
+        <header class="page-header" style="background-image: url('images/headers/sweet-header.jpg');">
+            <h1>Sweet Desserts</h1>
+            <p>Indulge in our handcrafted sweet creations</p>
+        </header>
+
+        <section class="menu-section fade-in" id="donuts">
+            <h2>Donuts</h2>
+            <div class="donut-grid">
+                <div class="donut-item">
+                    <img src="images/donuts/original-glazed.jpg" alt="Original Glazed Donut">
+                    <div class="donut-item-content">
+                        <h3>Original Glazed</h3>
+                        <p class="description">Our signature glazed donut with perfect sweetness</p>
+                        <p class="price"><span class="currency">Rp</span>12K</p>
+                        <button onclick="addToCart('donut-1', 'Original Glazed Donut', 12000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="donut-item">
+                    <img src="images/donuts/salted-caramel.jpg" alt="Salted Caramel Popcorn Donut">
+                    <div class="donut-item-content">
+                        <h3>Salted Caramel</h3>
+                        <p class="description">Topped with caramel glaze and popcorn pieces</p>
+                        <p class="price"><span class="currency">Rp</span>15K</p>
+                        <button onclick="addToCart('donut-2', 'Salted Caramel Popcorn Donut', 15000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="donut-item">
+                    <img src="images/donuts/matcha.jpg" alt="Matcha Donut">
+                    <div class="donut-item-content">
+                        <h3>Matcha</h3>
+                        <p class="description">Green tea glazed with matcha powder dusting</p>
+                        <p class="price"><span class="currency">Rp</span>15K</p>
+                        <button onclick="addToCart('donut-3', 'Matcha Donut', 15000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="donut-item">
+                    <img src="images/donuts/dark-choco.jpg" alt="Dark Choco Donut">
+                    <div class="donut-item-content">
+                        <h3>Dark Choco</h3>
+                        <p class="description">Rich dark chocolate glaze and chocolate shavings</p>
+                        <p class="price"><span class="currency">Rp</span>15K</p>
+                        <button onclick="addToCart('donut-4', 'Dark Choco Donut', 15000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="donut-item">
+                    <img src="images/donuts/almond-white-choco.jpg" alt="Almond White Chocolate Donut">
+                    <div class="donut-item-content">
+                        <h3>Almond White Choco</h3>
+                        <p class="description">White chocolate glaze with roasted almonds</p>
+                        <p class="price"><span class="currency">Rp</span>15K</p>
+                        <button onclick="addToCart('donut-5', 'Almond White Chocolate Donut', 15000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="donut-item">
+                    <img src="images/donuts/oreo.jpg" alt="Oreo Donut">
+                    <div class="donut-item-content">
+                        <h3>Oreo</h3>
+                        <p class="description">Cookies and cream glaze with Oreo crumbs</p>
+                        <p class="price"><span class="currency">Rp</span>15K</p>
+                        <button onclick="addToCart('donut-6', 'Oreo Donut', 15000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="donut-item">
+                    <img src="images/donuts/biscoff.jpg" alt="Lotus Biscoff Donut">
+                    <div class="donut-item-content">
+                        <h3>Lotus Biscoff</h3>
+                        <p class="description">Biscoff spread glaze with cookie crumbs</p>
+                        <p class="price"><span class="currency">Rp</span>15K</p>
+                        <button onclick="addToCart('donut-7', 'Lotus Biscoff Donut', 15000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="donut-item">
+                    <img src="images/donuts/tiramisu.jpg" alt="Tiramisu Donut">
+                    <div class="donut-item-content">
+                        <h3>Tiramisu</h3>
+                        <p class="description">Coffee-flavored with mascarpone cream</p>
+                        <p class="price"><span class="currency">Rp</span>15K</p>
+                        <button onclick="addToCart('donut-8', 'Tiramisu Donut', 15000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section fade-in" id="croissants">
+            <h2>Croissants</h2>
+            <div class="croissant-grid">
+                <div class="croissant-item">
+                    <img src="images/croissants/chocolate.jpg" alt="Chocolate Croissant">
+                    <div class="croissant-item-content">
+                        <h3>Chocolate</h3>
+                        <p class="description">Buttery croissant filled with dark chocolate</p>
+                        <p class="price"><span class="currency">Rp</span>20K</p>
+                        <button onclick="addToCart('croissant-1', 'Chocolate Croissant', 20000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="croissant-item">
+                    <img src="images/croissants/matcha.jpg" alt="Matcha Croissant">
+                    <div class="croissant-item-content">
+                        <h3>Matcha</h3>
+                        <p class="description">Green tea filled croissant with matcha glaze</p>
+                        <p class="price"><span class="currency">Rp</span>22K</p>
+                        <button onclick="addToCart('croissant-2', 'Matcha Croissant', 22000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="croissant-item">
+                    <img src="images/croissants/pistachio.jpg" alt="Pistachio Croissant">
+                    <div class="croissant-item-content">
+                        <h3>Pistachio</h3>
+                        <p class="description">Filled with pistachio cream and nuts</p>
+                        <p class="price"><span class="currency">Rp</span>24K</p>
+                        <button onclick="addToCart('croissant-3', 'Pistachio Croissant', 24000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section fade-in" id="cookies">
+            <h2>Cookies</h2>
+            <div class="cookie-grid">
+                <div class="cookie-item">
+                    <img src="images/cookies/choco-chip.jpg" alt="Choco Chip Cookies">
+                    <div class="cookie-item-content">
+                        <h3>Choco Chip</h3>
+                        <p class="description">Classic cookies with premium chocolate chips</p>
+                        <p class="price"><span class="currency">Rp</span>13K</p>
+                        <button onclick="addToCart('cookie-1', 'Choco Chip Cookies', 13000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="cookie-item">
+                    <img src="images/cookies/red-velvet.jpg" alt="Red Velvet Cream Cheese Cookie">
+                    <div class="cookie-item-content">
+                        <h3>Red Velvet</h3>
+                        <p class="description">Red velvet cookie with cream cheese filling</p>
+                        <p class="price"><span class="currency">Rp</span>13K</p>
+                        <button onclick="addToCart('cookie-2', 'Red Velvet Cream Cheese Cookie', 13000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="cookie-item">
+                    <img src="images/cookies/matcha-white-choco.jpg" alt="Matcha White Chocolate Cookie">
+                    <div class="cookie-item-content">
+                        <h3>Matcha White Choco</h3>
+                        <p class="description">Green tea cookies with white chocolate chunks</p>
+                        <p class="price"><span class="currency">Rp</span>13K</p>
+                        <button onclick="addToCart('cookie-3', 'Matcha White Chocolate Cookie', 13000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="cookie-item">
+                    <img src="images/cookies/choco-lava.jpg" alt="Choco Lava Cookies">
+                    <div class="cookie-item-content">
+                        <h3>Choco Lava</h3>
+                        <p class="description">Warm cookies with molten chocolate center</p>
+                        <p class="price"><span class="currency">Rp</span>13K</p>
+                        <button onclick="addToCart('cookie-4', 'Choco Lava Cookies', 13000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section fade-in" id="cakes">
+            <h2>Cakes</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/cakes/triple-chocolate.jpg" alt="Triple Chocolate Cake">
+                    <div class="cake-item-content">
+                        <h3>Triple Chocolate Cake</h3>
+                        <p class="description">Three layers of chocolate heaven with ganache</p>
+                        <div class="cake-prices">
+                            <div class="cake-price-option">
+                                <span class="label">Per Slice</span>
+                                <span class="price"><span class="currency">Rp</span>30K</span>
+                            </div>
+                            <div class="cake-price-option">
+                                <span class="label">Whole</span>
+                                <span class="price"><span class="currency">Rp</span>220K</span>
+                            </div>
+                        </div>
+                        <div class="cake-buttons">
+                            <button onclick="addToCart('cake-1-slice', 'Triple Chocolate Cake (Slice)', 30000)" class="add-to-cart">Order Slice</button>
+                            <button onclick="addToCart('cake-1-whole', 'Triple Chocolate Cake (Whole)', 220000)" class="add-to-cart">Order Whole</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/cakes/blueberry-cheesecake.jpg" alt="Blueberry Cheesecake">
+                    <div class="cake-item-content">
+                        <h3>Blueberry Cheesecake</h3>
+                        <p class="description">Creamy cheesecake with fresh blueberry topping</p>
+                        <div class="cake-prices">
+                            <div class="cake-price-option">
+                                <span class="label">Per Slice</span>
+                                <span class="price"><span class="currency">Rp</span>29K</span>
+                            </div>
+                            <div class="cake-price-option">
+                                <span class="label">Whole</span>
+                                <span class="price"><span class="currency">Rp</span>200K</span>
+                            </div>
+                        </div>
+                        <div class="cake-buttons">
+                            <button onclick="addToCart('cake-2-slice', 'Blueberry Cheesecake (Slice)', 29000)" class="add-to-cart">Order Slice</button>
+                            <button onclick="addToCart('cake-2-whole', 'Blueberry Cheesecake (Whole)', 200000)" class="add-to-cart">Order Whole</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/cakes/red-velvet.jpg" alt="Red Velvet Cake">
+                    <div class="cake-item-content">
+                        <h3>Red Velvet Cake</h3>
+                        <p class="description">Classic red velvet with cream cheese frosting</p>
+                        <div class="cake-prices">
+                            <div class="cake-price-option">
+                                <span class="label">Per Slice</span>
+                                <span class="price"><span class="currency">Rp</span>31K</span>
+                            </div>
+                            <div class="cake-price-option">
+                                <span class="label">Whole</span>
+                                <span class="price"><span class="currency">Rp</span>234K</span>
+                            </div>
+                        </div>
+                        <div class="cake-buttons">
+                            <button onclick="addToCart('cake-3-slice', 'Red Velvet Cake (Slice)', 31000)" class="add-to-cart">Order Slice</button>
+                            <button onclick="addToCart('cake-3-whole', 'Red Velvet Cake (Whole)', 234000)" class="add-to-cart">Order Whole</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/cakes/strawberry-shortcake.jpg" alt="Strawberry Shortcake">
+                    <div class="cake-item-content">
+                        <h3>Strawberry Shortcake</h3>
+                        <p class="description">Light sponge cake with fresh strawberries</p>
+                        <div class="cake-prices">
+                            <div class="cake-price-option">
+                                <span class="label">Per Slice</span>
+                                <span class="price"><span class="currency">Rp</span>28K</span>
+                            </div>
+                            <div class="cake-price-option">
+                                <span class="label">Whole</span>
+                                <span class="price"><span class="currency">Rp</span>215K</span>
+                            </div>
+                        </div>
+                        <div class="cake-buttons">
+                            <button onclick="addToCart('cake-4-slice', 'Strawberry Shortcake (Slice)', 28000)" class="add-to-cart">Order Slice</button>
+                            <button onclick="addToCart('cake-4-whole', 'Strawberry Shortcake (Whole)', 215000)" class="add-to-cart">Order Whole</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/cakes/tiramisu.jpg" alt="Tiramisu Cake">
+                    <div class="cake-item-content">
+                        <h3>Tiramisu Cake</h3>
+                        <p class="description">Coffee-soaked layers with mascarpone cream</p>
+                        <div class="cake-prices">
+                            <div class="cake-price-option">
+                                <span class="label">Per Slice</span>
+                                <span class="price"><span class="currency">Rp</span>28K</span>
+                            </div>
+                            <div class="cake-price-option">
+                                <span class="label">Whole</span>
+                                <span class="price"><span class="currency">Rp</span>215K</span>
+                            </div>
+                        </div>
+                        <div class="cake-buttons">
+                            <button onclick="addToCart('cake-5-slice', 'Tiramisu Cake (Slice)', 28000)" class="add-to-cart">Order Slice</button>
+                            <button onclick="addToCart('cake-5-whole', 'Tiramisu Cake (Whole)', 215000)" class="add-to-cart">Order Whole</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/cakes/matcha-opera.jpg" alt="Matcha Opera Cake">
+                    <div class="cake-item-content">
+                        <h3>Matcha Opera Cake</h3>
+                        <p class="description">Layered green tea cake with chocolate ganache</p>
+                        <div class="cake-prices">
+                            <div class="cake-price-option">
+                                <span class="label">Per Slice</span>
+                                <span class="price"><span class="currency">Rp</span>32K</span>
+                            </div>
+                            <div class="cake-price-option">
+                                <span class="label">Whole</span>
+                                <span class="price"><span class="currency">Rp</span>250K</span>
+                            </div>
+                        </div>
+                        <div class="cake-buttons">
+                            <button onclick="addToCart('cake-6-slice', 'Matcha Opera Cake (Slice)', 32000)" class="add-to-cart">Order Slice</button>
+                            <button onclick="addToCart('cake-6-whole', 'Matcha Opera Cake (Whole)', 250000)" class="add-to-cart">Order Whole</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/cakes/mango-mousse.jpg" alt="Mango Mousse Cake">
+                    <div class="cake-item-content">
+                        <h3>Mango Mousse Cake</h3>
+                        <p class="description">Light mousse cake with fresh mango pieces</p>
+                        <div class="cake-prices">
+                            <div class="cake-price-option">
+                                <span class="label">Per Slice</span>
+                                <span class="price"><span class="currency">Rp</span>27K</span>
+                            </div>
+                            <div class="cake-price-option">
+                                <span class="label">Whole</span>
+                                <span class="price"><span class="currency">Rp</span>198K</span>
+                            </div>
+                        </div>
+                        <div class="cake-buttons">
+                            <button onclick="addToCart('cake-7-slice', 'Mango Mousse Cake (Slice)', 27000)" class="add-to-cart">Order Slice</button>
+                            <button onclick="addToCart('cake-7-whole', 'Mango Mousse Cake (Whole)', 198000)" class="add-to-cart">Order Whole</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Cafe Street, Jakarta</p>
+                <p><i class="fas fa-phone"></i> +62 123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@decallafe.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 8AM - 10PM</p>
+                <p>Saturday - Sunday: 9AM - 11PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Decallafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

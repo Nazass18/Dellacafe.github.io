@@ -1,0 +1,22 @@
+# About Us Page - Image Naming Guide
+
+## Team Photos (images/about/team/)
+- chef1.jpg                    [600x600px] - Head Pastry Chef Sarah Williams
+- chef2.jpg                    [600x600px] - Sous Chef Michael Chen
+- barista.jpg                  [600x600px] - Head Barista Emma Rodriguez
+
+## Café Photos (images/about/cafe/)
+- cafe-interior.jpg            [1200x800px] - Main café interior for story section
+
+# Image Requirements:
+- Format: JPG
+- Quality: High-resolution, well-lit
+- File size: Optimize to under 500KB
+- Color profile: sRGB
+- Compression: Web-optimized
+
+# Naming Conventions:
+1. Use all lowercase letters
+2. Use hyphens (-) to separate words
+3. Be descriptive but concise
+4. Don't use spaces or special characters 

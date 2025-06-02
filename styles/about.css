@@ -1,0 +1,244 @@
+/* About Page Styles */
+.about-page {
+    padding-top: 80px;
+    background-color: var(--light-beige);
+}
+
+/* Story Section */
+.story-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-content h2 {
+    color: var(--deep-red-brown);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.story-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: var(--charcoal-gray);
+}
+
+.story-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Values Section */
+.values-section {
+    padding: 4rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.values-section h2 {
+    color: var(--deep-red-brown);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    padding: 2rem;
+    background-color: var(--light-beige);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+.value-card i {
+    font-size: 2.5rem;
+    color: var(--deep-red-brown);
+    margin-bottom: 1rem;
+}
+
+.value-card h3 {
+    color: var(--charcoal-gray);
+    margin-bottom: 1rem;
+}
+
+.value-card p {
+    color: var(--charcoal-gray);
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-section h2 {
+    color: var(--deep-red-brown);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    color: var(--deep-red-brown);
+    margin: 1rem 0 0.5rem;
+}
+
+.team-member .role {
+    color: var(--muted-blue-gray);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.team-member p {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--charcoal-gray);
+    line-height: 1.6;
+}
+
+/* Location Section */
+.location-section {
+    padding: 4rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.location-section h2 {
+    color: var(--deep-red-brown);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.location-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    text-align: left;
+    padding: 2rem;
+    background-color: var(--light-beige);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    color: var(--deep-red-brown);
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    color: var(--charcoal-gray);
+}
+
+.contact-info i {
+    width: 25px;
+    color: var(--deep-red-brown);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .story-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .story-image img {
+        height: 300px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .location-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        order: -1;
+    }
+}
+
+.page-header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--white);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    color: var(--deep-red-brown);
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.page-header p {
+    color: var(--charcoal-gray);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4;
+    text-align: center;
+} 

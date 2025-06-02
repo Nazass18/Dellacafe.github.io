@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Desserts - Decallafe</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Decallafe</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="drinks.html">Drinks</a></li>
+            <li><a href="sweet-dessert.html">Sweet Dessert</a></li>
+            <li><a href="savory-dessert.html" class="active">Savory Dessert</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="cart-icon">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="menu-page">
+        <header class="page-header" style="background-image: url('images/headers/savory-header.jpg');">
+            <h1>Savory Desserts</h1>
+            <p>Discover our delightful selection of savory treats</p>
+        </header>
+
+        <section class="menu-section fade-in" id="savory">
+            <div class="savory-grid">
+                <div class="savory-item">
+                    <img src="images/savory/smoked-beef-croissant.jpg" alt="Smoked Beef & Cheese Croissant">
+                    <div class="savory-item-content">
+                        <h3>Smoked Beef & Cheese</h3>
+                        <p class="description">Buttery croissant filled with premium smoked beef and melted cheese</p>
+                        <p class="price"><span class="currency">Rp</span>27K</p>
+                        <button onclick="addToCart('savory-1', 'Smoked Beef & Cheese Croissant', 27000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="savory-item">
+                    <img src="images/savory/butter-croissant.jpg" alt="Butter Croissant">
+                    <div class="savory-item-content">
+                        <h3>Butter Croissant</h3>
+                        <p class="description">Classic French croissant made with premium butter</p>
+                        <p class="price"><span class="currency">Rp</span>24K</p>
+                        <button onclick="addToCart('savory-2', 'Butter Croissant', 24000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="savory-item">
+                    <img src="images/savory/garlic-butter-toast.jpg" alt="Garlic Butter Toast">
+                    <div class="savory-item-content">
+                        <h3>Garlic Butter Toast</h3>
+                        <p class="description">Crispy toast with rich garlic butter spread</p>
+                        <p class="price"><span class="currency">Rp</span>28K</p>
+                        <button onclick="addToCart('savory-3', 'Garlic Butter Toast', 28000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="savory-item">
+                    <img src="images/savory/smoked-beef-toast.jpg" alt="Smoked Beef Toast">
+                    <div class="savory-item-content">
+                        <h3>Smoked Beef Toast</h3>
+                        <p class="description">Toasted bread topped with smoked beef and herbs</p>
+                        <p class="price"><span class="currency">Rp</span>30K</p>
+                        <button onclick="addToCart('savory-4', 'Smoked Beef Toast', 30000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="savory-item">
+                    <img src="images/savory/cream-cheese-bread.jpg" alt="Cream Cheese Bread">
+                    <div class="savory-item-content">
+                        <h3>Cream Cheese Bread</h3>
+                        <p class="description">Soft bread filled with rich cream cheese</p>
+                        <p class="price"><span class="currency">Rp</span>25K</p>
+                        <button onclick="addToCart('savory-5', 'Cream Cheese Bread', 25000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Cafe Street, Jakarta</p>
+                <p><i class="fas fa-phone"></i> +62 123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@decallafe.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 8AM - 10PM</p>
+                <p>Saturday - Sunday: 9AM - 11PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Decallafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks Menu - Decallafe</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Decallafe</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="drinks.html" class="active">Drinks</a></li>
+            <li><a href="sweet-dessert.html">Sweet Dessert</a></li>
+            <li><a href="savory-dessert.html">Savory Dessert</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="cart-icon">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="menu-page">
+        <header class="page-header" style="background-image: url('images/headers/drinks-header.jpg');">
+            <h1>Drinks Menu</h1>
+            <p>Explore our selection of handcrafted beverages</p>
+        </header>
+
+        <section class="menu-section fade-in">
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/drinks/iced-americano.jpg" alt="Iced Americano">
+                    <div class="menu-item-content">
+                        <h3>Iced Americano</h3>
+                        <p class="description">Double shot espresso with cold water and ice</p>
+                        <p class="price">Rp 24K</p>
+                        <button type="button" onclick="addToCart('drink-1', 'Iced Americano', 24000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/drinks/salted-caramel-macchiato.jpg" alt="Salted Caramel Macchiato">
+                    <div class="menu-item-content">
+                        <h3>Salted Caramel Macchiato</h3>
+                        <p class="description">Espresso with steamed milk and salted caramel sauce</p>
+                        <p class="price">Rp 28K</p>
+                        <button type="button" onclick="addToCart('drink-2', 'Salted Caramel Macchiato', 28000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/drinks/vanilla-latte.jpg" alt="Vanilla Latte">
+                    <div class="menu-item-content">
+                        <h3>Vanilla Latte</h3>
+                        <p class="description">Espresso with steamed milk and vanilla syrup</p>
+                        <p class="price">Rp 27K</p>
+                        <button onclick="addToCart('drink-3', 'Vanilla Latte', 27000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/drinks/kopi-susu.jpg" alt="Kopi Susu Korang">
+                    <div class="menu-item-content">
+                        <h3>Kopi Susu Korang</h3>
+                        <p class="description">Indonesian-style coffee with milk and palm sugar</p>
+                        <p class="price">Rp 25K</p>
+                        <button onclick="addToCart('drink-4', 'Kopi Susu Korang', 25000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/drinks/hazelnut-cappuccino.jpg" alt="Hazelnut Cappuccino">
+                    <div class="menu-item-content">
+                        <h3>Hazelnut Cappuccino</h3>
+                        <p class="description">Rich espresso with steamed milk and hazelnut syrup</p>
+                        <p class="price">Rp 27K</p>
+                        <button onclick="addToCart('drink-5', 'Hazelnut Cappuccino', 27000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/drinks/matcha-latte.jpg" alt="Matcha Latte">
+                    <div class="menu-item-content">
+                        <h3>Matcha Latte</h3>
+                        <p class="description">Premium green tea powder with steamed milk</p>
+                        <p class="price">Rp 28K</p>
+                        <button onclick="addToCart('drink-6', 'Matcha Latte', 28000)" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-offers fade-in">
+            <h2>Special Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <i class="fas fa-mug-hot"></i>
+                    <h3>Happy Hour</h3>
+                    <p>20% off all drinks from 2 PM to 5 PM, Monday to Friday</p>
+                </div>
+                <div class="offer-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Group Orders</h3>
+                    <p>10% off when ordering 5 or more drinks</p>
+                </div>
+                <div class="offer-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Loyalty Program</h3>
+                    <p>Earn points with every purchase and get free drinks</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Cafe Street, Jakarta</p>
+                <p><i class="fas fa-phone"></i> +62 123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@decallafe.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 8AM - 10PM</p>
+                <p>Saturday - Sunday: 9AM - 11PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Decallafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
